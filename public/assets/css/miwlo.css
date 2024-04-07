@@ -316,7 +316,7 @@ img {
     align-items: center;
     justify-content: center;
     /* background-color: var(--c-blue); */
-    background-color: var(--c-white);
+    background-color: #faf4dc;
     /* width: 50px;
     height: 50px; */
     width: 60px;
@@ -358,9 +358,19 @@ img {
     width: 40px;
 }
 
+.container-desc-joko-tarub {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(../images/jawa/desc-joko-tarub.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
 .text-title-joko-tarub {
     font-size: 60px !important;
     font-weight: 700 !important;
+    color: white;
 }
 
 .text-title2-joko-tarub {
@@ -370,13 +380,62 @@ img {
 .text-title3-joko-tarub {
     font-size: 20px !important;
     font-weight: 700 !important;
+    color: #6c757d;
+}
+
+.text-title4-joko-tarub {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.text-title3-joko-tarub .text-title3-bold-joko-tarub {
+    color: #f55959;
+}
+
+.container-kalkulator-agregat .form-label,
+.container-kalkulator-dimensi .form-label {
+    margin-bottom: 0;
+}
+.container-kalkulator-agregat .form-text.text-danger,
+.container-kalkulator-dimensi .form-text.text-danger {
+    margin-top: 0;
+    padding-bottom: 0.25rem;
+}
+
+.content-kalkulator-dimensi {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.04);
+    background-color: var(--c-yellow-1);
+}
+
+.quadrant-chart-box {
+    width: 24px;
+    height: 24px;
+}
+
+.quadrant-label-box span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.quadrant-chart-box.kuadran-1 {
+    background-color: rgb(150, 214, 172, 0.5);
+}
+.quadrant-chart-box.kuadran-2 {
+    background-color: rgb(162, 210, 255, 0.5);
+}
+.quadrant-chart-box.kuadran-3 {
+    background-color: rgb(239, 248, 213, 0.5);
+}
+.quadrant-chart-box.kuadran-4 {
+    background-color: rgb(248, 225, 255, 0.5);
 }
 
 .image-joko-tarub {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--c-white);
+    background-color: #faf4dc;
     width: 128px;
     height: 128px;
     border-radius: 50%;
@@ -385,12 +444,30 @@ img {
 .text-desc-joko-tarub {
     text-align: justify;
     text-align-last: center;
+    color: white;
 }
 
-.select-kalkulator,
-.button-kalkulator {
+.select-kalkulator-2,
+.button-kalkulator-2 {
     background-color: var(--c-yellow-1);
     font-weight: 700;
+}
+
+.button-kalkulator-2:hover {
+    color: white;
+    background-color: var(--c-brown-1);
+}
+
+.button-kalkulator,
+.select-kalkulator {
+    background-color: var(--c-brown-1);
+    font-weight: 700;
+    color: white;
+}
+
+.button-kalkulator:hover {
+    background-color: var(--c-white);
+    color: black;
 }
 
 .miwlo-initial-navbar ul.navbar-nav > li > a {
@@ -1597,6 +1674,10 @@ li.mega-drop-down {
     position: absolute !important;
     bottom: 150px;
     left: 32%;
+}
+
+.container-hubungi .card {
+    background-color: rgb(250, 244, 220, 0.85) !important;
 }
 
 @media (max-width: 767px) {

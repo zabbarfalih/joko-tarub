@@ -36,7 +36,9 @@
 
 
         <!-- Link Integration -->
-        <link rel="stylesheet" href={{ asset("assets/css/aos.css")}}>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
         <link rel="stylesheet" href={{ asset("assets/css/normalize.css")}}>
         <link rel="stylesheet" href={{ asset("assets/css/slinky.min.css")}}>
         <link rel="stylesheet" href={{ asset("assets/css/slinky-mobile-theme.css")}}>
@@ -81,9 +83,6 @@
     <!-- Parallax -->
     <script src={{ asset("assets/js/parallax.min.js")}}></script>
     <script src={{ asset("assets/js/parallax-scroll.js")}}></script>
-
-    <!-- Animation -->
-    <script src={{ asset("assets/js/aos.js")}}></script>
 
     <!-- Mobile Menu -->
     <script src={{ asset("assets/js/slinky.min.js")}}></script>
