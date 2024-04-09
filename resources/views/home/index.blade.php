@@ -26,7 +26,7 @@
                                 Monggo <br/> Ditingali
                             </button>
                         </a>
-                        <a class="text-decoration-none" href="https://t.me/menfessbatara">
+                        <a class="text-decoration-none" href="https://t.me/BataraJavEdu">
                             <button class="hero-btn">
                                 <div class="d-flex button-telegram">
                                     <i class='fab fa-telegram-plane'></i>
@@ -318,24 +318,34 @@
             <h1 class="text-center">Video Penerapan</h1>
             <div id="tutorial" class="container-playlist mt-5">
                 <div class="main-video-container-playlist">
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" loop controls class="main-video"></iframe>
-                    <h3 class="main-vid-title">house flood animation</h3>
+                    <iframe src="https://www.youtube.com/embed/u1j9uwNLJ7c" loop controls class="main-video"></iframe>
+                    <h3 class="main-vid-title">Tutorial Bahasa Jawa 1</h3>
                 </div>
 
                 <div class="video-list-container-playlist">
                     <div class="list active">
-                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" class="list-video"></iframe>
-                        <h3 class="list-title">house flood animation</h3>
+                        <iframe src="https://www.youtube.com/embed/u1j9uwNLJ7c" class="list-video"></iframe>
+                        <h3 class="list-title">Tutorial Bahasa Jawa 1</h3>
                     </div>
 
                     <div class="list">
-                        <iframe src="https://www.youtube.com/embed/WVqcpoVtnGg" class="list-video"></iframe>
-                        <h3 class="list-title">seminar cuy</h3>
+                        <iframe src="https://www.youtube.com/embed/LzKI2nTgJDw" class="list-video"></iframe>
+                        <h3 class="list-title">Tutorial Bahasa Jawa 2</h3>
                     </div>
 
                     <div class="list">
-                        <iframe src="https://www.youtube.com/embed/KA7r-iZy4qg" class="list-video"></iframe>
-                        <h3 class="list-title">SOP perkuliahan</h3>
+                        <iframe src="https://www.youtube.com/embed/zCNwNI8Q8Dg" class="list-video"></iframe>
+                        <h3 class="list-title">Tutorial Bahasa Jawa 3</h3>
+                    </div>
+
+                    <div class="list">
+                        <iframe src="https://www.youtube.com/embed/8owaTqo_ZrQ" class="list-video"></iframe>
+                        <h3 class="list-title">Tutorial Bahasa Jawa 4</h3>
+                    </div>
+
+                    <div class="list">
+                        <iframe src="https://www.youtube.com/embed/i68QyOc9N0s" class="list-video"></iframe>
+                        <h3 class="list-title">Lagu Jawa Terkini</h3>
                     </div>
                 </div>
             </div>
