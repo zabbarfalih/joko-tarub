@@ -4,9 +4,9 @@ $(document).ready(function () {
         event.preventDefault(); // Mencegah perilaku bawaan form
 
         // Ambil nilai Xi dari input
-        const X6_1 = parseFloat($("#budaya-literasi-1").val());
-        const X6_2 = parseFloat($("#budaya-literasi-2").val());
-        const X6_3 = parseFloat($("#budaya-literasi-3").val());
+        const X6_1 = parseFloat($("#budaya-literasi-1-agregat").val());
+        const X6_2 = parseFloat($("#budaya-literasi-2-agregat").val());
+        const X6_3 = parseFloat($("#budaya-literasi-3-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X6_1 = 0;
@@ -33,7 +33,7 @@ $(document).ready(function () {
         console.log("D6: " + D6);
 
         // Ambil nilai Xi dari input
-        const X1_1 = parseFloat($("#ekonomi-budaya-1").val());
+        const X1_1 = parseFloat($("#ekonomi-budaya-1-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X1_1 = 0;
@@ -47,12 +47,12 @@ $(document).ready(function () {
         console.log("D1: " + D1);
 
         // Ambil nilai Xi dari input
-        const X2_1 = parseFloat($("#pendidikan-1").val());
-        const X2_2 = parseFloat($("#pendidikan-2").val());
-        const X2_3 = parseFloat($("#pendidikan-3").val());
-        const X2_4 = parseFloat($("#pendidikan-4").val());
-        const X2_5 = parseFloat($("#pendidikan-5").val());
-        const X2_6 = parseFloat($("#pendidikan-6").val());
+        const X2_1 = parseFloat($("#pendidikan-1-agregat").val());
+        const X2_2 = parseFloat($("#pendidikan-2-agregat").val());
+        const X2_3 = parseFloat($("#pendidikan-3-agregat").val());
+        const X2_4 = parseFloat($("#pendidikan-4-agregat").val());
+        const X2_5 = parseFloat($("#pendidikan-5-agregat").val());
+        const X2_6 = parseFloat($("#pendidikan-6-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X2_1 = 0;
@@ -97,14 +97,14 @@ $(document).ready(function () {
         console.log("D2: " + D2);
 
         // Ambil nilai Xi dari input
-        const X3_1 = parseFloat($("#ketahanan-sosial-budaya-1").val());
-        const X3_2 = parseFloat($("#ketahanan-sosial-budaya-2").val());
-        const X3_3 = parseFloat($("#ketahanan-sosial-budaya-3").val());
-        const X3_4 = parseFloat($("#ketahanan-sosial-budaya-4").val());
-        const X3_5 = parseFloat($("#ketahanan-sosial-budaya-5").val());
-        const X3_6 = parseFloat($("#ketahanan-sosial-budaya-6").val());
-        const X3_7 = parseFloat($("#ketahanan-sosial-budaya-7").val());
-        const X3_8 = parseFloat($("#ketahanan-sosial-budaya-8").val());
+        const X3_1 = parseFloat($("#ketahanan-sosial-budaya-1-agregat").val());
+        const X3_2 = parseFloat($("#ketahanan-sosial-budaya-2-agregat").val());
+        const X3_3 = parseFloat($("#ketahanan-sosial-budaya-3-agregat").val());
+        const X3_4 = parseFloat($("#ketahanan-sosial-budaya-4-agregat").val());
+        const X3_5 = parseFloat($("#ketahanan-sosial-budaya-5-agregat").val());
+        const X3_6 = parseFloat($("#ketahanan-sosial-budaya-6-agregat").val());
+        const X3_7 = parseFloat($("#ketahanan-sosial-budaya-7-agregat").val());
+        const X3_8 = parseFloat($("#ketahanan-sosial-budaya-8-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X3_1 = 0;
@@ -162,12 +162,12 @@ $(document).ready(function () {
         console.log("D3: " + D3);
 
         // Ambil nilai Xi dari input
-        const X4_1 = parseFloat($("#warisan-budaya-1").val());
-        const X4_2 = parseFloat($("#warisan-budaya-2").val());
-        const X4_3 = parseFloat($("#warisan-budaya-3").val());
-        const X4_4 = parseFloat($("#warisan-budaya-4").val());
-        const X4_5 = parseFloat($("#warisan-budaya-5").val());
-        const X4_6 = parseFloat($("#warisan-budaya-6").val());
+        const X4_1 = parseFloat($("#warisan-budaya-1-agregat").val());
+        const X4_2 = parseFloat($("#warisan-budaya-2-agregat").val());
+        const X4_3 = parseFloat($("#warisan-budaya-3-agregat").val());
+        const X4_4 = parseFloat($("#warisan-budaya-4-agregat").val());
+        const X4_5 = parseFloat($("#warisan-budaya-5-agregat").val());
+        const X4_6 = parseFloat($("#warisan-budaya-6-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X4_1 = 0;
@@ -212,10 +212,10 @@ $(document).ready(function () {
         console.log("D4: " + D4);
 
         // Ambil nilai Xi dari input
-        const X5_1 = parseFloat($("#ekspresi-budaya-1").val());
-        const X5_2 = parseFloat($("#ekspresi-budaya-2").val());
-        const X5_3 = parseFloat($("#ekspresi-budaya-3").val());
-        const X5_4 = parseFloat($("#ekspresi-budaya-4").val());
+        const X5_1 = parseFloat($("#ekspresi-budaya-1-agregat").val());
+        const X5_2 = parseFloat($("#ekspresi-budaya-2-agregat").val());
+        const X5_3 = parseFloat($("#ekspresi-budaya-3-agregat").val());
+        const X5_4 = parseFloat($("#ekspresi-budaya-4-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X5_1 = 0;
@@ -248,9 +248,9 @@ $(document).ready(function () {
         console.log("D5: " + D5);
 
         // Ambil nilai Xi dari input
-        const X7_1 = parseFloat($("#gender-1").val());
-        const X7_2 = parseFloat($("#gender-2").val());
-        const X7_3 = parseFloat($("#gender-3").val());
+        const X7_1 = parseFloat($("#gender-1-agregat").val());
+        const X7_2 = parseFloat($("#gender-2-agregat").val());
+        const X7_3 = parseFloat($("#gender-3-agregat").val());
 
         // Hitung nilai Si untuk setiap Xi
         const min_X7_1 = 0;
