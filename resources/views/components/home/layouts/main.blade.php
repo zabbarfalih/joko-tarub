@@ -31,10 +31,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
 
+
     <!-- Vanillas -->
     {{-- <link rel="stylesheet" href={{ asset("assets/css/palet.css")}}> --}}
-
-
         <!-- Link Integration -->
     <!-- AOS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
