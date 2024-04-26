@@ -302,16 +302,16 @@ $(document).ready(function () {
 
         const provinsi = $("select[name='provinsi']").val();
 
-        const { GoogleAuth } = require('google-auth-library');
+        // const { GoogleAuth } = require("google-auth-library");
 
         // Buat objek autentikasi
         const auth = new GoogleAuth({
-          keyFile: 'path/to/your/credentials.json', // Ganti dengan lokasi file kredensial Anda
-          scopes: ['https://www.googleapis.com/auth/spreadsheets'], // Scope yang dibutuhkan untuk Google Sheets API
+            keyFile: "path/to/your/credentials.json", // Ganti dengan lokasi file kredensial Anda
+            scopes: ["https://www.googleapis.com/auth/spreadsheets"], // Scope yang dibutuhkan untuk Google Sheets API
         });
-        
+
         // Dapatkan token akses OAuth2
-        const accessToken = await auth.getAccessToken();
+        // const accessToken = await auth.getAccessToken();
 
         const headers = {
             Authorization: `Bearer ${accessToken}`,
