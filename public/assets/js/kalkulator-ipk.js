@@ -1,3 +1,5 @@
+const { head } = require("lodash");
+
 $(document).ready(function () {
     // Budaya Literasi
     $("#kalkulator-form-ipk").submit(function (event) {
@@ -287,6 +289,92 @@ $(document).ready(function () {
             D6 * 0.1 +
             D7 * 0.05;
 
-        $("#agregat-hasil").val(IPK.toFixed(2));
+        let SHEET_ID = "17x_TxPU6Hp8sCC_mmcm-bB6h7wwaX6U7czBjJ5irGm8";
+        let SHEET_NAME = "Wilayah";
+        let API_KEY = "AIzaSyBv_9zuNHpq4BG9Y1RCgAynX9WXs5QZ-E4";
+        let FULL_URL =
+            "https://sheets.googleapis.com/v4/spreadsheets/" +
+            SHEET_ID +
+            "/values/" +
+            SHEET_NAME +
+            "?key=" +
+            API_KEY;
+
+        const provinsi = $("select[name='provinsi']").val();
+
+        const { GoogleAuth } = require('google-auth-library');
+
+        // Buat objek autentikasi
+        const auth = new GoogleAuth({
+          keyFile: 'path/to/your/credentials.json', // Ganti dengan lokasi file kredensial Anda
+          scopes: ['https://www.googleapis.com/auth/spreadsheets'], // Scope yang dibutuhkan untuk Google Sheets API
+        });
+        
+        // Dapatkan token akses OAuth2
+        const accessToken = await auth.getAccessToken();
+
+        const headers = {
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json",
+        };
+
+        // Fungsi untuk mengirim data ke spreadsheet
+        function sendDataToSpreadsheet(data) {
+            // Mengirim data ke API Google Sheets
+            fetch(FULL_URL, {
+                method: "PUT",
+                headers: headers,
+                body: JSON.stringify({ values: data }),
+            })
+                .then((response) => response.json())
+                .then((result) => {
+                    console.log(
+                        "Data terbaru berhasil dikirim ke spreadsheet:",
+                        result
+                    );
+                    // Tampilkan nilai IPK pada input hasil
+                    $("#agregat-hasil").val(IPK.toFixed(2));
+                })
+                .catch((error) => {
+                    console.error(
+                        "Terjadi kesalahan saat mengirim data ke spreadsheet:",
+                        error
+                    );
+                });
+        }
+
+        // Fungsi untuk mengambil data dari spreadsheet dan memperbarui nilai IPK
+        function updateIPK() {
+            // Mengambil data dari API Google Sheets
+            fetch(FULL_URL)
+                .then((response) => response.json())
+                .then((data) => {
+                    // Temukan data provinsi yang sesuai
+                    const rows = data.values;
+                    const dataProvinsi = rows.find(
+                        (row) => row[0] === provinsi
+                    );
+
+                    if (dataProvinsi) {
+                        // Perbarui nilai x dari dataProvinsi dengan nilai IPK
+                        dataProvinsi[1] = IPK;
+
+                        // Memperbarui data di spreadsheet
+                        sendDataToSpreadsheet(rows);
+                    } else {
+                        console.log("Data provinsi tidak ditemukan.");
+                        console.log("Provinsi yang dicari:", provinsi);
+                    }
+                })
+                .catch((error) => {
+                    console.error(
+                        "Terjadi kesalahan saat mengambil data dari spreadsheet:",
+                        error
+                    );
+                });
+        }
+
+        // Panggil fungsi untuk memperbarui nilai IPK di spreadsheet
+        updateIPK();
     });
 });
